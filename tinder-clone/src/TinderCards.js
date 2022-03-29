@@ -9,12 +9,13 @@ function TinderCards() {
 
     useEffect(()=>{
         async function fetchData(){
-            const req = await axios.get('/tinder/cards');
-
+            const req = await axios.get("/tinder/cards");
+            console.log(req.data)
             setPeople(req.data)
         }
         fetchData();
     },[])
+    console.log(people);
 
     const swiped = (direction,nameToDelete)=>{
         console.log("removing" + "Left the screen!")
@@ -35,7 +36,7 @@ function TinderCards() {
                     onCardLeftScreen={()=>outOfFrame(person.name)}
                 >
                     <div
-                    style={{backgroundImage : `url(${person.url})`}}
+                    style={{backgroundImage : `url(${person.imgUrl})`}}
                     className="card"
                 >
                     <h3>{person.name}</h3>    
