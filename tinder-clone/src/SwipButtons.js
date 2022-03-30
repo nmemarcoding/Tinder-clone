@@ -12,23 +12,23 @@ export default function SwipButtons() {
   return (
     <div className="swipButtons">
         <IconButton  className="swiped__repaet">
-            <ReplayIcon fontSize="large"/>
+            <ReplayIcon fontSize="medium"/>
         </IconButton>
 
         <IconButton  className="swiped__left">
-            <CloseIcon fontSize="large"/>
+            <CloseIcon fontSize="medium"/>
         </IconButton>
 
         <IconButton  className="swiped__star">
-            <StarRateIcon fontSize="large"/>
+            <StarRateIcon fontSize="lmedium"/>
         </IconButton>
 
         <IconButton  className="swiped__right">
-            <FavoriteIcon fontSize="large"/>
+            <FavoriteIcon fontSize="medium"/>
         </IconButton>
 
         <IconButton  className="swiped__lightning">
-            <FlashIcon fontSize="large"/>
+            <FlashIcon fontSize="medium"/>
         </IconButton>
     </div>
   )
